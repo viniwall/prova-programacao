@@ -33,11 +33,11 @@ public class Main {
         System.out.println();
 
         String classe = "";
-        if (primeiroBinario.startsWith("0")) {
+        if (primeiroBinario.startsWith("00") || primeiroBinario.startsWith("01")) {
             classe = "A";
         } else if (primeiroBinario.startsWith("10")) {
             classe = "B";
-        } else if (primeiroBinario.startsWith("110")) {
+        } else if (primeiroBinario.startsWith("11")) {
             classe = "C";
         }
 
