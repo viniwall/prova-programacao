@@ -10,7 +10,9 @@ public class Main {
             s.close();
             return;
         }
-        StringTokenizer st = new StringTokenizer(ip, "./");
+
+        String apenasIp = new StringTokenizer(ip, "/").nextToken();
+        StringTokenizer st = new StringTokenizer(apenasIp, ".");
         StringTokenizer mascara = new StringTokenizer(ip, "/");
 
         String primeiraToken = new StringTokenizer(ip, ".").nextToken();
